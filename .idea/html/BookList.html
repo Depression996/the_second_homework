@@ -1,0 +1,150 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>图书列表页</title>
+    <style type="text/css">
+        body{
+            background-image: url("../image/1.jpg");
+            background-repeat: repeat-x;
+
+        }
+        .a {
+            font-size: 14px;
+            font-weight: bolder;
+            color: #C60;
+            background-color: #CCC;
+            text-indent: 2em;
+            padding:7px;
+        }
+        dd{float:left;}
+        .b h1 {
+            font-size:14px;
+            color:#640000;
+            padding-left:15px;
+            height:25px;
+            line-height:25px;
+            background:#DFDFDF;
+            overflow:hidden;
+        }
+        .b{
+            width:600px;
+            margin:0px auto;
+            border:1px #888 solid;
+            overflow:hidden;
+            font-size:12px;
+            font-family:Verdana "宋体";
+            line-height:22px;
+            padding-bottom:10px;
+            margin-top: 150px;
+        }
+        .b dl{	float:left;
+            width:300px;
+            overflow:hidden;
+            margin-top:10px;}
+        .b dl dt{	float:left;
+            width:90px;
+            text-align:center;
+            overflow:hidden;}
+        .b dl dd{	float:left;
+            width:210px;
+            overflow:hidden;}
+        .b dl dd span {
+            color:#D90000;
+        }
+        .b dd a {
+            color:#0D5B95;
+            text-decoration:none;
+            font-size:14px;
+        }
+        .b dl dd span {
+            color:#D90000;
+        }
+        .b dd a {
+            color:#0D5B95;
+            text-decoration:none;
+            font-size:14px;
+        }
+        .b dd a:hover {
+            color:#0D5B95;
+            text-decoration:underline;
+        }
+        img {
+            border:0px;
+            height:104px;
+            width: 73px;
+        }
+        body, div, h1, p, dl, dt, dd {
+            margin:0px;
+            padding:0px;
+        }
+        dt{
+            float:left;
+        }
+        #btn{
+            margin-left: 250px;
+        }
+    </style>
+    <script >
+        function NewBook() {
+            window.location.href="NewBook.html";
+        }
+    </script>
+</head>
+<body>
+<div class="a">最新上架图书</div>
+<div class="b">
+
+    <dl>
+        <dt><img src="https://img01.yzcdn.cn/upload_files/2022/05/05/FvH_DnCz10y1DpS8sHxCQXfSUCMq.jpg!middle.jpg"/></dt>
+        <dd>
+            <p><a href="https://detail.youzan.com/show/goods?alias=3njeisd7kqt3kda"/>我很怕,但我还有勇气</a></p>
+            作者:王伟忠　著<br/>
+            出版社：人民文学出版社<br/>
+            <span>出版时间：2014年08月</span><br/>
+            定价：￥32.00<br/>
+            库存：100
+        </dd>
+    </dl>
+    <dl>
+        <dt><img src="https://img11.360buyimg.com/n1/jfs/t1/174284/32/19372/62711/60ed1c88Ee5e0bfed/d507c2aec6862deb.jpg"/></dt>
+        <dd>
+            <p><a href="https://item.jd.com/10060575760996.html"/>所有人问所有人</a></p>
+            作者:韩寒　著<br/>
+            出版社：湖南人民出版社<br/>
+            <span>出版时间：2013年08月</span><br/>
+            定价：￥36.00<br/>
+            库存：50
+        </dd>
+    </dl>
+    <dl>
+        <dt><img src="https://img01.yzcdn.cn/upload_files/2022/05/01/Fqe55SrDDECyJ7T4l9LGL8MhIEKD.jpg!middle.jpg"/></dt>
+        <dd>
+            <p><a href="https://detail.youzan.com/show/goods?alias=3636fkfb7hkioh7"/>百年孤独</a></p>
+            作者:加西亚·马尔克斯　著<br/>
+            出版社：南海出版公司<br/>
+            <span>出版时间：2017年08月</span><br/>
+            定价：￥79.00<br/>
+            库存：80
+        </dd>
+    </dl>
+
+    <dl>
+        <dt><img src="http://img3m0.ddimg.cn/66/12/11209218240-1_w_1.jpg"/></dt>
+        <dd>
+            <p><a href="http://product.dangdang.com/11209218240.html"/>所有人问所有人(韩寒...</a></p>
+            作者:毛姆　著<br/>
+            出版社：上海译文出版社<br/>
+            <span>出版时间：2004年08月</span><br/>
+            定价：￥15.00<br/>
+            库存：30
+        </dd>
+    </dl>
+    <button id="btn" onclick="NewBook()">登记新图书</button>
+</div>
+
+
+
+
+</body>
+</html>

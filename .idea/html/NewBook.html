@@ -1,0 +1,73 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>图书信息登记表</title>
+    <style type="text/css">
+        body{
+            background-image: url("../image/1.jpg");
+            background-repeat: repeat-x;
+        }
+        input {
+            width:200px;
+            height:18px;
+            border:1px solid #d4cdba;
+            padding:2px;
+        }
+
+        .btn input{
+            width:100px;
+            height:30px;
+            border-radius:3px;
+        }
+        .bg{
+            margin-left: 600px;
+            margin-top: 200px;
+        }
+    </style>
+    <script>
+    function check(){
+        let dateNow = new Date(),
+            yearNow = dateNow.getFullYear(),
+            monthNow = dateNow.getMonth() + 1,
+            dayNow = dateNow.getDate(),
+            maxDate = yearNow + '-' + (monthNow).toString().padStart(2, '0') + '-' + dayNow.toString().padStart(2, '0');
+            var inp = document.querySelector('#publisherdate');
+            inp.setAttribute('max', maxDate);
+
+        }
+        function sub(){
+        alert("图书信息提交成功！")
+        }
+    </script>
+</head>
+<body>
+<div class="bg">
+    <form action="#" method="get" autocomplete="off">
+        <h2>图书信息登记表</h2>
+        <p><span>图书名称：</span>
+            <input type="text" name="Book_name" required/>
+        </p>
+
+        <p><span>作者：&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <input type="text" name="author" required autofocus/>
+        </p>
+
+        <p><span>出版社：&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <input type="text" name="publisher" required/>
+        </p>
+
+        <p><span>出版日期：</span>
+            <input type="date"   id="publisherdate" onclick="check() " required/>
+        </p>
+        <p><span>库存数量：</span>
+            <input type="text"  id="number"  min="0"  required/>
+        </p>
+        <p class="btn">
+            &nbsp;&nbsp;&nbsp;&nbsp;<input type="submit" value="提交" onclick="sub()"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type="reset" value="重置" />
+        </p>
+    </form>
+</div>
+</body>
+</html>
